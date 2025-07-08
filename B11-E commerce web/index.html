@@ -13,40 +13,94 @@
 
   <!--  DaisyUI via CDN -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <!-- font awsome -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
 
   <!-- ✅ Tailwind Config for Poppins -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            poppins: ['Poppins', 'sans-serif'],
-          },
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-  </script>
+ <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          poppins: ['Poppins', 'sans-serif'],
+        },
+        colors: {
+          clifford: '#da373d',
+          reg: '#ffffff', 
+        },
+      },
+    },
+  }
+</script>
+
 
 </head>
 <body class="font-poppins">
 
   <!--  Header section -->
-  <header class="bg-clifford text-white p-4">
-    <h1 class="text-3xl font-bold">My E-Commerce Website</h1>
+  <header class="container mx-auto">
+     <!-- Nav ber section -->
+      
+      <div class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content ">
+        <li><a>Product</a></li>
+        <li><a>Services</a></li>
+        <li><a>Contuct us</a></li>
+     
+      
+    </div>
+  <img src="./c2-assets/logo-header.png" alt="" srcset="">
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1 text-xl">
+       <li><a>Product</a></li>
+        <li><a>Services</a></li>
+        <li><a>Contuct us</a></li>
+    </ul>
+  </div>
+
+  <div class="navbar-end space-x-5">
+<div class="flex items-center gap-6">
+  <!-- Heroicons Search -->
+  <svg xmlns="http://www.w3.org/2000/svg" 
+       class="h-8 w-8 text-gray-700" fill="none" 
+       viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" 
+          d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 103 10.5a7.5 7.5 0 0013.65 6.15z" />
+  </svg>
+
+  <!-- Font Awesome Cart -->
+  <i class="fa-solid fa-cart-shopping text-4xl text-gray-800"></i>
+</div>
+
+<a class="btn ">Button</a>
+ <a class="btn bg-lime-500 ">Button</a>
+</div>
+
+
+
+  </div>
+</div>
   </header>
 
   <!-- Main section -->
-  <main class="p-6">
-    <p class="text-lg">Welcome to our shop! Browse our products and enjoy your shopping.</p>
+  <main>
+>
   </main>
 
   <!--  Footer -->
-  <footer class="bg-gray-800 text-white text-center p-4 mt-8">
-    <p>&copy; 2025 All rights reserved.</p>
-  </footer>
+  <footer></footer>
+    
 
 </body>
 </html>
