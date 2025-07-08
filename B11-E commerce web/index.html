@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Website</title>
+
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!--  DaisyUI via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.0/dist/full.css" rel="stylesheet" type="text/css" />
+
+  <!-- ✅ Tailwind Config for Poppins -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+<body class="font-poppins">
+
+  <!--  Header section -->
+  <header class="bg-clifford text-white p-4">
+    <h1 class="text-3xl font-bold">My E-Commerce Website</h1>
+  </header>
+
+  <!-- Main section -->
+  <main class="p-6">
+    <p class="text-lg">Welcome to our shop! Browse our products and enjoy your shopping.</p>
+  </main>
+
+  <!--  Footer -->
+  <footer class="bg-gray-800 text-white text-center p-4 mt-8">
+    <p>&copy; 2025 All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
